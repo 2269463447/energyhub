@@ -169,7 +169,6 @@
 		A3F7EBFA236C49BD00B311AD /* ZFPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7EBDB236C49BD00B311AD /* ZFPortraitControlView.m */; };
 		A3F7EBFB236C49BD00B311AD /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7EBDC236C49BD00B311AD /* UIImageView+ZFCache.m */; };
 		A3F7EBFF236FD16E00B311AD /* EHAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7EBFE236FD16E00B311AD /* EHAdData.m */; };
-		C300147A2D8AE16D009DD7F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C30014792D8AE16D009DD7F5 /* README.md */; };
 		C300147D2D8AE32D009DD7F5 /* EHActivityTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C300147C2D8AE32D009DD7F5 /* EHActivityTopView.m */; };
 		C30014822D8EA748009DD7F5 /* EHHorizontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C30014812D8EA748009DD7F5 /* EHHorizontalScrollView.m */; };
 		C30014852D8F1E6F009DD7F5 /* EHAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30014842D8F1E6F009DD7F5 /* EHAreaCell.m */; };
@@ -629,7 +628,6 @@
 		A3F7EBFD236FD16E00B311AD /* EHAdData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHAdData.h; sourceTree = "<group>"; };
 		A3F7EBFE236FD16E00B311AD /* EHAdData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHAdData.m; sourceTree = "<group>"; };
 		AC3C37DBBB79515C23DFA28F /* Pods-EnergyHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnergyHub/Pods-EnergyHub.release.xcconfig"; sourceTree = "<group>"; };
-		C30014792D8AE16D009DD7F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C300147B2D8AE32D009DD7F5 /* EHActivityTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHActivityTopView.h; sourceTree = "<group>"; };
 		C300147C2D8AE32D009DD7F5 /* EHActivityTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHActivityTopView.m; sourceTree = "<group>"; };
 		C30014802D8EA748009DD7F5 /* EHHorizontalScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHHorizontalScrollView.h; sourceTree = "<group>"; };
@@ -1089,7 +1087,6 @@
 		A39E0DC822FE4F710076034E /* OpenShare */ = {
 			isa = PBXGroup;
 			children = (
-				C30014792D8AE16D009DD7F5 /* README.md */,
 				A39E0DC922FE4F710076034E /* LICENSE */,
 				A39E0DCA22FE4F710076034E /* openshare */,
 			);
@@ -2088,7 +2085,6 @@
 				F79B22321F61309E00DBB2E7 /* EHFastRegisterViewController.xib in Resources */,
 				F79B221B1F5EE9DB00DBB2E7 /* EHRecordCell.xib in Resources */,
 				F7F4342B1F54338D0002851F /* city.json in Resources */,
-				C300147A2D8AE16D009DD7F5 /* README.md in Resources */,
 				A3F7EBF4236C49BD00B311AD /* ZFPlayer.bundle in Resources */,
 				A3CAF1E21F49D88300684391 /* EHMemberWatchVideoViewController.xib in Resources */,
 				A39AEA87234D8F520083D5C3 /* teamWithdraw.html in Resources */,

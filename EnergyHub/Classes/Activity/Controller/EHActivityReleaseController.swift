@@ -48,16 +48,15 @@ class EHActivityReleaseController: EHBaseViewController {
     var district: String = ""
     ///详细地址
     var detailAddress: String = ""
-    ///活动主题
-    var themeLabel = UILabel()
     ///活动视图
-    var themeView = UIView()
+    var themeContentView = UIView()
     
     
     let startTimeIcon = UIImageView(image: UIImage(named: "time_picker"))
     let endTimeIcon = UIImageView(image: UIImage(named: "time_picker"))
     let contactIcon = UIImageView(image: UIImage(named: "time_picker"))
     let addressIcon = UIImageView(image: UIImage(named: "time_picker"))
+    let themeIcon = UIImageView(image: UIImage(named: "time_picker"))
     var formatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "zh_CN")
@@ -344,10 +343,29 @@ class EHActivityReleaseController: EHBaseViewController {
         self.scrollView.easy.appendView(addressView).insets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         
         // MARK: - 主题标签
-        let themeLabel = creatTitleLabel(text: "活动主题/标签")
+        let themeTitle = creatTitleLabel(text: "活动主题/标签")
         let themeView = UIView()
+        let themeLabel = UILabel()
+        themeLabel.text = "请选择主题/标签"
+        themeLabel.font = .regular(14)
+        themeLabel.textColor = UIColor(hex: "#BCBCBC")
         
+        themeContentView.subviews(themeLabel)
+        themeLabel.top(0).bottom(0).right(0).left(0)
+        themeIcon.setContentHuggingPriority(.required, for: .horizontal)
+        themeTitle.setContentHuggingPriority(.required, for: .horizontal)
+        themeView.subviews(themeTitle,themeContentView,themeIcon)
+        themeView.layout(
+            |-12-themeTitle.top(12)
+        )
+        themeContentView.top(12).bottom(12)
+        themeContentView.Left == themeTitle.Right + 12
+        themeContentView.Right == themeIcon.Left - 8
+        themeIcon.top(12).right(12)
+        let themeTap = UITapGestureRecognizer(target: self, action: #selector(toThemeVC))
+        themeView.addGestureRecognizer(themeTap)
         
+        self.scrollView.easy.appendView(themeView).insets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         
     }
     
@@ -683,6 +701,48 @@ class EHActivityReleaseController: EHBaseViewController {
             self?.contactIcon.transform = CGAffineTransform(rotationAngle: .pi / 2)
         }
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    // MARK: - 主题选择页面
+    @objc func toThemeVC() {
+        let vc = EHSelectThemeController()
+        vc.completion = { [weak self] theme,tags in
+            guard let self = self else { return }
+            themeContentView.subviews.forEach { $0.removeFromSuperview() }
+            themeContentView.removeConstraints(themeContentView.userAddedConstraints)
+            let themeView = EHThemeView(type: theme)
+            if tags.count == 0 {
+                themeContentView.subviews(themeView)
+                themeContentView.layout(
+                    2,
+                    |-0-themeView,
+                    2
+                )
+            }else {
+                let stackView = UIStackView()
+                stackView.axis = .horizontal
+                stackView.spacing = 8
+                stackView.height(16)
+                themeContentView.subviews(themeView,stackView)
+                for tag in tags {
+                    let tagView = EHTagView(type: tag)
+                    stackView.addArrangedSubview(tagView)
+                }
+                themeContentView.layout(
+                    2,
+                    |-0-themeView,
+                    6,
+                    |-0-stackView-(>=10)-|,
+                    0
+                )
+            }
+            themeContentView.layoutIfNeeded()
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    deinit {
+        
     }
 
 }

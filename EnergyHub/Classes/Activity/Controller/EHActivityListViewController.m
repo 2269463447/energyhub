@@ -36,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"同城活动";
-    self.view.backgroundColor = [UIColor colorWithRed:0.98 green:0.98 blue:0.96 alpha:1.00];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#FAFAF8"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

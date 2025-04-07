@@ -50,7 +50,7 @@
     
     // 初始化底部滑动条
     self.sliderView = [[UIView alloc] init];
-    self.sliderView.backgroundColor = EHMainColor;
+    self.sliderView.backgroundColor = [UIColor colorWithHexString:@"#FF8F21"];
     self.sliderView.translatesAutoresizingMaskIntoConstraints = NO;
     self.sliderView.layer.cornerRadius = 2;
     self.sliderView.frame = CGRectMake(11, 40, 56, 4);

@@ -166,8 +166,8 @@
         // 创建渐变层
         CAGradientLayer *gradientLayer = [CAGradientLayer layer];
         gradientLayer.colors = @[
-            (__bridge id)[UIColor colorWithRed:0.98 green:0.90 blue:0.84 alpha:1.00].CGColor,
-            (__bridge id)[UIColor colorWithRed:0.98 green:0.98 blue:0.96 alpha:1.00].CGColor
+            (__bridge id)[UIColor colorWithHexString:@"#FEE5D3"].CGColor,
+            (__bridge id)[UIColor colorWithHexString:@"#FAFAF8"].CGColor
         ];
         
         gradientLayer.startPoint = CGPointMake(0.5, 0);
