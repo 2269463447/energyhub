@@ -38,7 +38,7 @@
     self.nameLabel.numberOfLines = 0;
     self.nameLabel.lineBreakMode = NSLineBreakByWordWrapping | NSLineBreakByTruncatingTail;
     self.nameLabel.text = itemData.activityName;
-    self.dateLabel.text = itemData.date;
+    self.dateLabel.text = [NSString stringWithFormat:@"发布时间：%@", itemData.date];
     self.numberLabel.text = [NSString stringWithFormat:@"已报名：%@", itemData.count];
     EHThemeView *themeView = [[EHThemeView alloc] initWithType:itemData.theme];
     [_stackView addArrangedSubview:themeView];
