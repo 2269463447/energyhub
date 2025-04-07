@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFangSC", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 0;
+    -webkit-user-select: none;
+}
+table {
+	margin: 10px 15px 10px;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 2px;
+    height: 38px;
+    font-size: 14px;
+    text-align: center;
+}
+th{
+    width: 33%;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+caption{
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    -webkit-flex-direction: row;
+    border-top: 15px solid #F0F0F0;
+    border-bottom: 15px solid #F0F0F0;
+}
+#avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.info{
+    padding-left: 20px;
+}
+.row{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 15px;
+    display: flex;
+    -webkit-flex-direction: row;
+}
+.row div{
+    border: 1px solid lightgray;
+}
+.item{
+    width: 100%;
+}
+.center{
+    display: flex;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.withdraw{
+    border: none;
+    height: 30px;
+    width: 180px;
+    background-color: rgb(251,225,127)
+}
+</style>
+    <title>团队详情</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        var avatarUrl;
+        function setAvatarUrl(url){
+            if(url){
+                document.getElementById("avatar").src = url
+            }else{
+                alert("缺少头像URL")
+            }
+        }
+        function updateSum(sum){
+            document.getElementById("sum").innerHTML = sum
+        }
+        function setTeamData(detail){
+            for(var key in detail){
+                var element = document.getElementById(key)
+                if(element && element !== null){
+                    element.innerHTML = detail[key]
+                }
+            }
+            //document.getElementById("nickName").innerHTML = detail.nickName
+            //alert(JSON.stringify(detail))
+        }
+        // 调用OC的方法
+        function withdraw(){
+            var messageHandlers = window.webkit.messageHandlers
+            if(messageHandlers && messageHandlers.withdraw){
+                // 没有参数时需要传null【这个方法必须要有参数！！！】,否则无法调用对应的OC方法
+                messageHandlers.withdraw.postMessage(null)
+            }else{
+                alert("withdraw:::no message")
+            }
+        }
+    </script>
+    <div class="header">
+        <div>
+            <img id="avatar" src="https://c-ssl.duitang.com/uploads/item/201702/22/20170222200954_zeJWu.jpeg"/>
+        </div>
+        <div class="info">
+            <div>昵称：<span id="nickName">能量库会员</span></div>
+            <div>身份：<span id="levelName">白丁</span></div>
+            <div id="levelIntroduce">白丁，光杆一个，没有一个属于自己的团队成员</div>
+        </div>
+    </div>
+    <div class="item team">
+        <!--        <p>我的团队成员</p>-->
+        <table border="1">
+            <caption>我的团队成员：</caption>
+            <tr>
+                <th>一级成员</th>
+                <th>二级成员</th>
+                <th>三级成员</th>
+            </tr>
+            <tr>
+                <td><span id="level1Number">0</span>人</td>
+                <td><span id="level2Number">0</span>人</td>
+                <td><span id="level3Number">0</span>人</td>
+            </tr>
+            <tr>
+                <td>团队总人数：</td>
+                <td><span id="allNumber">0</span>人</td>
+                <td><a href="./teamLevel.html">团队人数和身份说明</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="item sale">
+        <table border="1">
+            <caption>本月团队消费业绩详情：</caption>
+            <tr>
+                <th>一级团队当月消费业绩</th>
+                <th>二级团队当月消费业绩</th>
+                <th>三级团队当月消费业绩</th>
+            </tr>
+            <tr>
+                <td><span id="level1Amount">0000</span>元</td>
+                <td><span id="level2Amount">0000</span>元</td>
+                <td><span id="level3Amount">0000</span>元</td>
+            </tr>
+        </table>
+    </div>
+    <div class="item cash">
+        <table border="1" style="margin-bottom:0;">
+            <caption>我的可提现奖金额度：</caption>
+            <tr>
+                <th>一级团队可提现金额</th>
+                <th>二级团队可提现金额</th>
+                <th>三级团队可提现金额</th>
+            </tr>
+            <tr>
+                <td><span id="level1CashOut">0000</span>元</td>
+                <td><span id="level2CashOut">0000</span>元</td>
+                <td><span id="level3CashOut">0000</span>元</td>
+            </tr>
+            <tr>
+                <td>上月总奖金</td>
+                <td><span id="lastMonthAmount">0000</span>元</td>
+                <td><a href="./teamBonus.html">奖励和提现制度说明</a></td>
+            </tr>
+            <tr>
+                <td>历史结余金额</td>
+                <td colspan="2"><span id="historyAmount">0000</span>元</td>
+            </tr>
+            <tr>
+                <td>总共可提现金额</td>
+                <td colspan="2"><span id="allCanCashOut">0000</span>元</td>
+            </tr>
+        </table>
+        <div class="row" style="margin-top:0;">
+            <div class="center" style="width:100%;border-top:none;">
+                <button class="withdraw" onclick="withdraw()">提现</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div style="width:50%;">历史累计提现金额</div>
+        <div style="width:50%;"><span id="allCashOut">0000</span>元</div>
+    </div>
+    <div style="height:30px;margin:40px 0;"></div>
+</body>
+</html>

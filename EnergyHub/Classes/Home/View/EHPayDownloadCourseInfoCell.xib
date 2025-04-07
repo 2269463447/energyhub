@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EHPayDownloadCourseInfoCell" rowHeight="160" id="KGk-i7-Jjw" customClass="EHPayDownloadCourseInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="离线购买课程信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-R5-4cs">
+                        <rect key="frame" x="15" y="14" width="290" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" name="FontColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-Tv-fPU" userLabel="name">
+                        <rect key="frame" x="15" y="39.5" width="275" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBu-aC-gUn" userLabel="quantity">
+                        <rect key="frame" x="15" y="64.5" width="275" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gp-uH-Xfp" userLabel="cost">
+                        <rect key="frame" x="15" y="89.5" width="275" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（购买后，凭会员账号可在该移动设备上登录本应用平台，离线观看！）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-cE-uoc">
+                        <rect key="frame" x="15" y="114" width="275" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.56235587600000003" blue="0.1273922324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="BackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="PIz-Tv-fPU" firstAttribute="top" secondItem="BVc-R5-4cs" secondAttribute="bottom" constant="7.5" id="24M-jI-VXI"/>
+                    <constraint firstItem="QBu-aC-gUn" firstAttribute="top" secondItem="PIz-Tv-fPU" secondAttribute="bottom" constant="8" id="2tr-7d-NEh"/>
+                    <constraint firstItem="BVc-R5-4cs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5KM-Cr-nC6"/>
+                    <constraint firstAttribute="trailing" secondItem="BVc-R5-4cs" secondAttribute="trailing" constant="15" id="5p5-rk-2qF"/>
+                    <constraint firstItem="4Gp-uH-Xfp" firstAttribute="trailing" secondItem="QBu-aC-gUn" secondAttribute="trailing" id="5rh-Ta-kC8"/>
+                    <constraint firstItem="4Gp-uH-Xfp" firstAttribute="leading" secondItem="QBu-aC-gUn" secondAttribute="leading" id="JHR-Tt-sHn"/>
+                    <constraint firstItem="Gth-cE-uoc" firstAttribute="leading" secondItem="4Gp-uH-Xfp" secondAttribute="leading" id="KHK-Dh-bLu"/>
+                    <constraint firstItem="PIz-Tv-fPU" firstAttribute="leading" secondItem="BVc-R5-4cs" secondAttribute="leading" id="KRz-Wz-2EB"/>
+                    <constraint firstItem="Gth-cE-uoc" firstAttribute="top" secondItem="4Gp-uH-Xfp" secondAttribute="bottom" constant="7.5" id="MVa-UU-ZCy"/>
+                    <constraint firstItem="4Gp-uH-Xfp" firstAttribute="top" secondItem="QBu-aC-gUn" secondAttribute="bottom" constant="8" id="Vda-O5-FHm"/>
+                    <constraint firstItem="QBu-aC-gUn" firstAttribute="trailing" secondItem="PIz-Tv-fPU" secondAttribute="trailing" id="X7R-nV-tfF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PIz-Tv-fPU" secondAttribute="trailing" constant="15" id="XJu-gL-5tV"/>
+                    <constraint firstItem="QBu-aC-gUn" firstAttribute="leading" secondItem="PIz-Tv-fPU" secondAttribute="leading" id="lib-aI-wx3"/>
+                    <constraint firstItem="Gth-cE-uoc" firstAttribute="trailing" secondItem="4Gp-uH-Xfp" secondAttribute="trailing" id="mqC-cV-1O8"/>
+                    <constraint firstItem="BVc-R5-4cs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ogc-JR-fJW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="costLabel" destination="4Gp-uH-Xfp" id="UZD-QN-HO7"/>
+                <outlet property="courseNameLabel" destination="PIz-Tv-fPU" id="HW9-D9-uyd"/>
+                <outlet property="quantityLabel" destination="QBu-aC-gUn" id="itT-bU-qGJ"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="187.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

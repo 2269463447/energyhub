@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EHBeATeacherViewController">
+            <connections>
+                <outlet property="classBackgroundView" destination="nRj-Pb-L8o" id="SHy-fN-Fr5"/>
+                <outlet property="teacherBackgroundView" destination="Zmw-nT-FTL" id="eMs-Fp-ZS3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYL-5e-0J1">
+                    <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请步骤和状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmu-wa-LN1">
+                            <rect key="frame" x="20" y="15" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="XAr-mQ-hwb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.98039215690000003" green="0.62745098040000002" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmw-nT-FTL">
+                            <rect key="frame" x="0.0" y="35" width="375" height="40"/>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="uJg-Ef-I1C"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRj-Pb-L8o">
+                            <rect key="frame" x="0.0" y="75" width="375" height="40"/>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8OI-PG-uGv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公告:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc3-on-KrR">
+                            <rect key="frame" x="15" y="125" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="FwB-IS-ajY"/>
+                                <constraint firstAttribute="width" constant="40" id="UJq-B5-D5k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、只要您有一技之长，不管是哪种种类的知识技能，都可以申请成为老师会员，并将自己的知识快速传播给他人。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLc-6Z-UM0">
+                            <rect key="frame" x="55" y="125" width="310" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="jyG-tD-3Xv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2、成为老师后，老师只要负责教材编制，录制、上传等技术问题由本站协助完成。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7b-Xw-O7j">
+                            <rect key="frame" x="55" y="180" width="310" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Urp-Z1-6o4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3、一份好的教材会因为本站的推广而造福更多的人群。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-OM-adz">
+                            <rect key="frame" x="55" y="235" width="310" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="PE2-FK-5aD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4、因为本站对学员的收费极低，所以能让更多的普通学员得到学习的机会。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s3-J3-1zz">
+                            <rect key="frame" x="55" y="275" width="310" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bfj-ej-4sT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5、愿更多的老师参与进来，多出好课程，实现老师与学员的共赢。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utK-gt-nLU">
+                            <rect key="frame" x="55" y="315" width="310" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8g6-pG-FLS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.申请老师通过之后才可以申请发布课程" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU0-Ah-ApO">
+                            <rect key="frame" x="55" y="355" width="310" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ho0-PF-Jdt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="FontColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Wmu-wa-LN1" secondAttribute="trailing" constant="20" id="1Cy-5J-AZ9"/>
+                        <constraint firstItem="nRj-Pb-L8o" firstAttribute="leading" secondItem="OYL-5e-0J1" secondAttribute="leading" id="2IT-kG-IN9"/>
+                        <constraint firstItem="W7b-Xw-O7j" firstAttribute="leading" secondItem="LLc-6Z-UM0" secondAttribute="leading" id="7DN-HS-Y47"/>
+                        <constraint firstItem="LLc-6Z-UM0" firstAttribute="leading" secondItem="Dc3-on-KrR" secondAttribute="trailing" id="8Na-xg-Hrp"/>
+                        <constraint firstItem="Zmw-nT-FTL" firstAttribute="top" secondItem="Wmu-wa-LN1" secondAttribute="bottom" id="GD2-Ag-oej"/>
+                        <constraint firstAttribute="trailing" secondItem="utK-gt-nLU" secondAttribute="trailing" constant="10" id="HmI-N0-K8o"/>
+                        <constraint firstItem="nRj-Pb-L8o" firstAttribute="top" secondItem="Zmw-nT-FTL" secondAttribute="bottom" id="JiZ-rt-Mop"/>
+                        <constraint firstItem="SU0-Ah-ApO" firstAttribute="top" secondItem="utK-gt-nLU" secondAttribute="bottom" id="KXW-Hm-s6w"/>
+                        <constraint firstAttribute="trailing" secondItem="SU0-Ah-ApO" secondAttribute="trailing" constant="10" id="OnF-MN-hXu"/>
+                        <constraint firstItem="utK-gt-nLU" firstAttribute="leading" secondItem="8s3-J3-1zz" secondAttribute="leading" id="PPc-nr-TPP"/>
+                        <constraint firstItem="Zmw-nT-FTL" firstAttribute="leading" secondItem="OYL-5e-0J1" secondAttribute="leading" id="Rgn-vF-JCk"/>
+                        <constraint firstAttribute="trailing" secondItem="8PC-OM-adz" secondAttribute="trailing" constant="10" id="aTq-iD-htp"/>
+                        <constraint firstItem="8s3-J3-1zz" firstAttribute="top" secondItem="8PC-OM-adz" secondAttribute="bottom" id="eDn-iu-vYe"/>
+                        <constraint firstItem="8PC-OM-adz" firstAttribute="leading" secondItem="W7b-Xw-O7j" secondAttribute="leading" id="faq-df-GG8"/>
+                        <constraint firstAttribute="trailing" secondItem="Zmw-nT-FTL" secondAttribute="trailing" id="gF3-ig-dsI"/>
+                        <constraint firstItem="Dc3-on-KrR" firstAttribute="leading" secondItem="OYL-5e-0J1" secondAttribute="leading" constant="15" id="hW3-07-RMS"/>
+                        <constraint firstAttribute="trailing" secondItem="8s3-J3-1zz" secondAttribute="trailing" constant="10" id="iGD-75-TGi"/>
+                        <constraint firstAttribute="trailing" secondItem="W7b-Xw-O7j" secondAttribute="trailing" constant="10" id="iYr-3V-zWu"/>
+                        <constraint firstItem="8s3-J3-1zz" firstAttribute="leading" secondItem="8PC-OM-adz" secondAttribute="leading" id="jI0-Bo-X4h"/>
+                        <constraint firstItem="SU0-Ah-ApO" firstAttribute="leading" secondItem="utK-gt-nLU" secondAttribute="leading" id="jZC-Ju-hhw"/>
+                        <constraint firstItem="Wmu-wa-LN1" firstAttribute="top" secondItem="OYL-5e-0J1" secondAttribute="top" constant="15" id="l4z-yO-Ui2"/>
+                        <constraint firstItem="Dc3-on-KrR" firstAttribute="top" secondItem="nRj-Pb-L8o" secondAttribute="bottom" constant="10" id="lYd-qv-CSf"/>
+                        <constraint firstItem="utK-gt-nLU" firstAttribute="top" secondItem="8s3-J3-1zz" secondAttribute="bottom" id="lgb-CK-Uei"/>
+                        <constraint firstItem="8PC-OM-adz" firstAttribute="top" secondItem="W7b-Xw-O7j" secondAttribute="bottom" id="pBI-wJ-dK9"/>
+                        <constraint firstItem="Wmu-wa-LN1" firstAttribute="leading" secondItem="OYL-5e-0J1" secondAttribute="leading" constant="20" id="qdo-wJ-Ccp"/>
+                        <constraint firstItem="W7b-Xw-O7j" firstAttribute="top" secondItem="LLc-6Z-UM0" secondAttribute="bottom" id="sEz-xr-0Mn"/>
+                        <constraint firstItem="LLc-6Z-UM0" firstAttribute="top" secondItem="nRj-Pb-L8o" secondAttribute="bottom" constant="10" id="tiI-Vu-1WR"/>
+                        <constraint firstAttribute="trailing" secondItem="LLc-6Z-UM0" secondAttribute="trailing" constant="10" id="wMa-8t-rkz"/>
+                        <constraint firstAttribute="trailing" secondItem="nRj-Pb-L8o" secondAttribute="trailing" id="yGX-ik-axv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OYL-5e-0J1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Ur-2y-RDU"/>
+                <constraint firstAttribute="bottom" secondItem="OYL-5e-0J1" secondAttribute="bottom" id="22Z-D2-c5A"/>
+                <constraint firstItem="OYL-5e-0J1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="lrD-a8-mYI"/>
+                <constraint firstAttribute="trailing" secondItem="OYL-5e-0J1" secondAttribute="trailing" id="uWY-zK-1R2"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="124"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="EHCashCountCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-cy-ALq">
+                        <rect key="frame" x="10" y="10" width="60" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="0B2-sU-BQD"/>
+                            <constraint firstAttribute="height" constant="30" id="HfR-xC-gwA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-tN-Oeo">
+                        <rect key="frame" x="75" y="10" width="267" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="79r-rd-h9b"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-QZ-lKz">
+                        <rect key="frame" x="40" y="55" width="272" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="b3h-3i-E8g"/>
+                        </constraints>
+                        <state key="normal" title="提交">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="commitAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0le-T1-kvu"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1d2-QZ-lKz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="3gD-0y-R9i"/>
+                    <constraint firstItem="xg1-cy-ALq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="66i-AQ-9wX"/>
+                    <constraint firstItem="cfF-tN-Oeo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7Go-HQ-akk"/>
+                    <constraint firstItem="1d2-QZ-lKz" firstAttribute="top" secondItem="cfF-tN-Oeo" secondAttribute="bottom" constant="15" id="Juo-M3-Le0"/>
+                    <constraint firstAttribute="trailing" secondItem="cfF-tN-Oeo" secondAttribute="trailing" constant="10" id="K5U-4V-ZKK"/>
+                    <constraint firstItem="xg1-cy-ALq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Qgo-eW-2Cs"/>
+                    <constraint firstItem="cfF-tN-Oeo" firstAttribute="leading" secondItem="xg1-cy-ALq" secondAttribute="trailing" constant="5" id="jr9-fb-8Oz"/>
+                    <constraint firstAttribute="trailing" secondItem="1d2-QZ-lKz" secondAttribute="trailing" constant="40" id="q0N-9O-1ie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countTextField" destination="cfF-tN-Oeo" id="hGo-NM-ube"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="108"/>
+        </tableViewCell>
+    </objects>
+</document>

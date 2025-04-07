@@ -1,0 +1,6 @@
+module EasyListView {
+  umbrella header "EasyListView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EHCooperateViewController">
+            <connections>
+                <outlet property="addressTextView" destination="0gb-F6-W9D" id="JNM-7z-Hbp"/>
+                <outlet property="commitButton" destination="Zxp-di-33t" id="eaY-HR-sor"/>
+                <outlet property="companyTextView" destination="oFn-Mu-mHf" id="wG4-RM-0Py"/>
+                <outlet property="contactTextView" destination="DFS-Gy-7vd" id="llN-Tn-D1S"/>
+                <outlet property="intentionTextView" destination="AN1-15-fVS" id="Ac6-dQ-S0E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhC-Bb-pzZ">
+                    <rect key="frame" x="0.0" y="10" width="375" height="657"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AN1-15-fVS" customClass="FSTextView">
+                            <rect key="frame" x="5" y="20" width="365" height="100"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="Rqy-gU-y0u"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oFn-Mu-mHf" customClass="FSTextView">
+                            <rect key="frame" x="5" y="135" width="365" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="xRT-c9-dQd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-Gy-7vd" customClass="FSTextView">
+                            <rect key="frame" x="5" y="200" width="365" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="V37-bp-RRc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-F6-W9D" customClass="FSTextView">
+                            <rect key="frame" x="5" y="265" width="365" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Ri6-fM-OaR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-di-33t">
+                            <rect key="frame" x="20" y="345" width="335" height="40"/>
+                            <color key="backgroundColor" red="0.92549019610000005" green="0.56078431370000004" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BuK-4W-Pb9"/>
+                            </constraints>
+                            <size key="titleShadowOffset" width="4" height="4"/>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="提交">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="commitAction:" destination="-1" eventType="touchUpInside" id="iEr-p6-ysI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0gb-F6-W9D" secondAttribute="trailing" constant="5" id="3iZ-hP-3yP"/>
+                        <constraint firstItem="Zxp-di-33t" firstAttribute="leading" secondItem="yhC-Bb-pzZ" secondAttribute="leading" constant="20" id="4Ta-LJ-CoB"/>
+                        <constraint firstAttribute="trailing" secondItem="oFn-Mu-mHf" secondAttribute="trailing" constant="5" id="5NN-Qd-yCm"/>
+                        <constraint firstAttribute="trailing" secondItem="DFS-Gy-7vd" secondAttribute="trailing" constant="5" id="93l-Rt-va3"/>
+                        <constraint firstItem="AN1-15-fVS" firstAttribute="leading" secondItem="yhC-Bb-pzZ" secondAttribute="leading" constant="5" id="Cmc-3j-BJj"/>
+                        <constraint firstItem="oFn-Mu-mHf" firstAttribute="top" secondItem="AN1-15-fVS" secondAttribute="bottom" constant="15" id="Hug-Yy-gPI"/>
+                        <constraint firstAttribute="trailing" secondItem="Zxp-di-33t" secondAttribute="trailing" constant="20" id="NIp-jK-XAV"/>
+                        <constraint firstItem="Zxp-di-33t" firstAttribute="top" secondItem="0gb-F6-W9D" secondAttribute="bottom" constant="30" id="Rld-Q4-EMU"/>
+                        <constraint firstItem="AN1-15-fVS" firstAttribute="top" secondItem="yhC-Bb-pzZ" secondAttribute="top" constant="20" id="UVc-vj-bGD"/>
+                        <constraint firstItem="DFS-Gy-7vd" firstAttribute="top" secondItem="oFn-Mu-mHf" secondAttribute="bottom" constant="15" id="Ubb-p1-Anr"/>
+                        <constraint firstItem="0gb-F6-W9D" firstAttribute="top" secondItem="DFS-Gy-7vd" secondAttribute="bottom" constant="15" id="ciV-4n-Ppc"/>
+                        <constraint firstItem="0gb-F6-W9D" firstAttribute="leading" secondItem="yhC-Bb-pzZ" secondAttribute="leading" constant="5" id="fko-Ao-JWe"/>
+                        <constraint firstItem="oFn-Mu-mHf" firstAttribute="leading" secondItem="yhC-Bb-pzZ" secondAttribute="leading" constant="5" id="goE-es-di6"/>
+                        <constraint firstAttribute="trailing" secondItem="AN1-15-fVS" secondAttribute="trailing" constant="5" id="pOe-Rc-P5D"/>
+                        <constraint firstItem="DFS-Gy-7vd" firstAttribute="leading" secondItem="yhC-Bb-pzZ" secondAttribute="leading" constant="5" id="r0U-io-23x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yhC-Bb-pzZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1CA-b6-cnS"/>
+                <constraint firstAttribute="trailing" secondItem="yhC-Bb-pzZ" secondAttribute="trailing" id="gdp-4w-8Uu"/>
+                <constraint firstAttribute="bottom" secondItem="yhC-Bb-pzZ" secondAttribute="bottom" id="sBS-3e-jVh"/>
+                <constraint firstItem="yhC-Bb-pzZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="yeH-dp-Zbm"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="124"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

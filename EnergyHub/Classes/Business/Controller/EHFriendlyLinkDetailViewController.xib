@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EHFriendlyLinkDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、我们希望与内容健康、用心维护的优秀站点进行交换链接，从而彼此提高网站访问量。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Ru-Jdr">
+                    <rect key="frame" x="5" y="10" width="365" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7hz-SS-auc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2、我们的交换原则是平等互助。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajK-ej-vwa">
+                    <rect key="frame" x="5" y="50" width="365" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="jOX-cD-0mB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3、需要交换链接的网站，请在贵站的首页上加我们的LOGO链接，然后将贵站的链接和联系方式发送至邮箱(cafhj112@163.com),我们回七个工作日内审核并回复你。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPX-h3-CdO">
+                    <rect key="frame" x="5" y="70" width="365" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Gg7-HV-PMf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4、网站最好是某个领域内的知名站点；网站首页的PR值(Google Page Rank)≥5；网站的Alexa排名在5万以内。满足以上条件的网站，我们会优先考虑。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBj-gq-lzj">
+                    <rect key="frame" x="5" y="150" width="365" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="WFR-g2-bgX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q0d-Ru-Jdr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="7kJ-WS-f3s"/>
+                <constraint firstItem="ajK-ej-vwa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="BhI-wT-dGb"/>
+                <constraint firstAttribute="trailing" secondItem="JBj-gq-lzj" secondAttribute="trailing" constant="5" id="G8r-Ez-rg5"/>
+                <constraint firstItem="JBj-gq-lzj" firstAttribute="top" secondItem="JPX-h3-CdO" secondAttribute="bottom" id="Zw5-Ok-Ozw"/>
+                <constraint firstAttribute="trailing" secondItem="ajK-ej-vwa" secondAttribute="trailing" constant="5" id="fdR-JJ-t5p"/>
+                <constraint firstItem="Q0d-Ru-Jdr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="hEn-ki-EOq"/>
+                <constraint firstItem="JBj-gq-lzj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="jlo-XN-a6d"/>
+                <constraint firstAttribute="trailing" secondItem="Q0d-Ru-Jdr" secondAttribute="trailing" constant="5" id="laa-nz-SFA"/>
+                <constraint firstItem="ajK-ej-vwa" firstAttribute="top" secondItem="Q0d-Ru-Jdr" secondAttribute="bottom" id="mAG-44-eXz"/>
+                <constraint firstItem="JPX-h3-CdO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="qJl-kd-JBI"/>
+                <constraint firstItem="JPX-h3-CdO" firstAttribute="top" secondItem="ajK-ej-vwa" secondAttribute="bottom" id="rNc-uY-fGV"/>
+                <constraint firstAttribute="trailing" secondItem="JPX-h3-CdO" secondAttribute="trailing" constant="5" id="rRh-IS-rNa"/>
+            </constraints>
+            <point key="canvasLocation" x="-228" y="72"/>
+        </view>
+    </objects>
+</document>

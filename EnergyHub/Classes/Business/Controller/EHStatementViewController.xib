@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EHStatementViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuM-fX-K0Q">
+                    <rect key="frame" x="0.0" y="10" width="375" height="657"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TM-h8-oJ9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一、法律声明:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cay-E5-adh">
+                                    <rect key="frame" x="5" y="5" width="365" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Phw-8i-YiL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)、我公司所有业务合作均有标准流程，合同签署必须盖章，而不是扫描件；" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-ZF-Re4">
+                                    <rect key="frame" x="10" y="25" width="355" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="yg9-6F-2QO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2)、能量库平台上的所有课程都是各位老师的原创作品，内容如有涉及到侵权行为，请及时向平台提供书面权利通知，并且提供身份证明、权属证明、具体链接或书面材料、及详细侵权情况说明。平台会追究侵权作品的责任，以及相关后续纠正事务。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4N-Rw-VDT">
+                                    <rect key="frame" x="10" y="65" width="355" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="M2l-Bq-nHO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(3)、平台上的所有会员在论坛的发言、以及老师的作品，都是会员个人的观点，不代表本平台观点，凡是使用本平台的会员，都要对自己的言论负责。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfK-v5-Ldb">
+                                    <rect key="frame" x="10" y="175" width="355" height="75"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="2s4-fd-aID"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二、知识产权声明:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-Wb-9rO">
+                                    <rect key="frame" x="5" y="255" width="365" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="a5H-CU-QUZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)、能量库平台拥有网站上所有信息内容（除会员以个人身份发布的信息以外）的版权。未经许可不得转播使用。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nha-uQ-a20">
+                                    <rect key="frame" x="10" y="275" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="lJh-hT-XBS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2)、“能量库APP图标”以及“能量库”名称都为本公司版权所有。任何人不得擅自使用，否则将依法追究相关责任。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-Vq-Bcg">
+                                    <rect key="frame" x="10" y="335" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="CDI-a9-RC0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三、隐私政策声明:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDM-hE-61Q">
+                                    <rect key="frame" x="5" y="395" width="365" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="cGG-gP-IHE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)、能量库尊重并保护所有使用本平台服务用户的个人隐私权。在未征得您事先许可的情况下，不会将这些信息对外披露或向第三方提供。您在同意电子协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于能量库服务协议不可分割的一部分。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-nO-D9E">
+                                    <rect key="frame" x="10" y="415" width="355" height="95"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="95" id="TdY-Ww-oRv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四、特别注意事项声明:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lo-SJ-Keb">
+                                    <rect key="frame" x="5" y="510" width="365" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="kc0-UB-Y3T"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)、您的账户均有安全保护功能，请妥善保管您的账户及密码信息。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC9-A7-nHT">
+                                    <rect key="frame" x="10" y="530" width="355" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Xdv-eS-18G"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2)、如果您不是具备完全民事权利能力和完全民事行为能力的自然人，您无权使用能量库平台服务，因此能量库希望您不要向我们提供任何个人信息。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE5-sr-gwN">
+                                    <rect key="frame" x="10" y="570" width="355" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="TTA-p2-Amx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="n4d-Wb-9rO" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="5" id="41d-kO-aUT"/>
+                                <constraint firstAttribute="trailing" secondItem="xfK-v5-Ldb" secondAttribute="trailing" constant="10" id="6CL-pz-RCN"/>
+                                <constraint firstItem="Cay-E5-adh" firstAttribute="top" secondItem="8TM-h8-oJ9" secondAttribute="top" constant="5" id="9K4-Ju-m46"/>
+                                <constraint firstItem="W4N-Rw-VDT" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="AQc-Cc-J79"/>
+                                <constraint firstAttribute="trailing" secondItem="mC9-A7-nHT" secondAttribute="trailing" constant="10" id="C6g-gC-ofw"/>
+                                <constraint firstItem="LWW-ZF-Re4" firstAttribute="top" secondItem="Cay-E5-adh" secondAttribute="bottom" id="Kve-Xs-Cad"/>
+                                <constraint firstItem="LWW-ZF-Re4" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="L4C-Rj-2fV"/>
+                                <constraint firstItem="eVH-nO-D9E" firstAttribute="top" secondItem="TDM-hE-61Q" secondAttribute="bottom" id="NZn-Ta-id7"/>
+                                <constraint firstItem="TDM-hE-61Q" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="5" id="NlF-RX-khm"/>
+                                <constraint firstAttribute="trailing" secondItem="1ed-Vq-Bcg" secondAttribute="trailing" constant="10" id="QLQ-Lq-F4v"/>
+                                <constraint firstItem="5lo-SJ-Keb" firstAttribute="top" secondItem="eVH-nO-D9E" secondAttribute="bottom" id="QVT-1S-xO9"/>
+                                <constraint firstItem="eVH-nO-D9E" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="RKd-sq-5Ao"/>
+                                <constraint firstAttribute="trailing" secondItem="Nha-uQ-a20" secondAttribute="trailing" constant="10" id="TR9-iF-tCK"/>
+                                <constraint firstAttribute="trailing" secondItem="W4N-Rw-VDT" secondAttribute="trailing" constant="10" id="UsB-mK-5h2"/>
+                                <constraint firstItem="Nha-uQ-a20" firstAttribute="top" secondItem="n4d-Wb-9rO" secondAttribute="bottom" id="Y6s-NG-0kS"/>
+                                <constraint firstItem="n4d-Wb-9rO" firstAttribute="top" secondItem="xfK-v5-Ldb" secondAttribute="bottom" constant="5" id="Ycg-7H-gdH"/>
+                                <constraint firstAttribute="trailing" secondItem="DE5-sr-gwN" secondAttribute="trailing" constant="10" id="Zru-a5-k90"/>
+                                <constraint firstItem="xfK-v5-Ldb" firstAttribute="top" secondItem="W4N-Rw-VDT" secondAttribute="bottom" id="b4q-KO-KQ7"/>
+                                <constraint firstItem="1ed-Vq-Bcg" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="dsL-hg-Cs5"/>
+                                <constraint firstItem="Cay-E5-adh" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="5" id="eOU-cb-BD2"/>
+                                <constraint firstItem="5lo-SJ-Keb" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="5" id="eew-oj-QLM"/>
+                                <constraint firstItem="DE5-sr-gwN" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="fjx-Fe-dSX"/>
+                                <constraint firstAttribute="trailing" secondItem="LWW-ZF-Re4" secondAttribute="trailing" constant="10" id="h20-hP-dS5"/>
+                                <constraint firstItem="mC9-A7-nHT" firstAttribute="top" secondItem="5lo-SJ-Keb" secondAttribute="bottom" id="hws-o4-Ix5"/>
+                                <constraint firstAttribute="trailing" secondItem="TDM-hE-61Q" secondAttribute="trailing" constant="5" id="hxW-NX-Czv"/>
+                                <constraint firstAttribute="trailing" secondItem="Cay-E5-adh" secondAttribute="trailing" constant="5" id="iPd-eg-oMz"/>
+                                <constraint firstItem="xfK-v5-Ldb" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="imu-xZ-Dwo"/>
+                                <constraint firstItem="mC9-A7-nHT" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="m6n-fU-x0f"/>
+                                <constraint firstItem="DE5-sr-gwN" firstAttribute="top" secondItem="mC9-A7-nHT" secondAttribute="bottom" id="ob8-la-Uz6"/>
+                                <constraint firstAttribute="trailing" secondItem="5lo-SJ-Keb" secondAttribute="trailing" constant="5" id="pKW-CP-3B4"/>
+                                <constraint firstItem="1ed-Vq-Bcg" firstAttribute="top" secondItem="Nha-uQ-a20" secondAttribute="bottom" id="rtJ-qr-UPF"/>
+                                <constraint firstAttribute="trailing" secondItem="n4d-Wb-9rO" secondAttribute="trailing" constant="5" id="s6V-G4-Bnc"/>
+                                <constraint firstItem="W4N-Rw-VDT" firstAttribute="top" secondItem="LWW-ZF-Re4" secondAttribute="bottom" id="u8r-GA-AUQ"/>
+                                <constraint firstItem="TDM-hE-61Q" firstAttribute="top" secondItem="1ed-Vq-Bcg" secondAttribute="bottom" id="w1v-Lv-MbF"/>
+                                <constraint firstItem="Nha-uQ-a20" firstAttribute="leading" secondItem="8TM-h8-oJ9" secondAttribute="leading" constant="10" id="zCN-ae-8Xa"/>
+                                <constraint firstAttribute="trailing" secondItem="eVH-nO-D9E" secondAttribute="trailing" constant="10" id="zzk-Qe-zvN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8TM-h8-oJ9" secondAttribute="bottom" id="7uS-gA-4bu"/>
+                        <constraint firstItem="8TM-h8-oJ9" firstAttribute="centerX" secondItem="uuM-fX-K0Q" secondAttribute="centerX" id="JU9-hI-8o0"/>
+                        <constraint firstAttribute="trailing" secondItem="8TM-h8-oJ9" secondAttribute="trailing" id="OXP-VD-T4f"/>
+                        <constraint firstItem="8TM-h8-oJ9" firstAttribute="top" secondItem="uuM-fX-K0Q" secondAttribute="top" id="cV4-Xu-pdN"/>
+                        <constraint firstItem="8TM-h8-oJ9" firstAttribute="leading" secondItem="uuM-fX-K0Q" secondAttribute="leading" id="cqt-Bh-ehl"/>
+                        <constraint firstItem="8TM-h8-oJ9" firstAttribute="centerY" secondItem="uuM-fX-K0Q" secondAttribute="centerY" id="zBO-cL-sOc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uuM-fX-K0Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Um9-WZ-IvQ"/>
+                <constraint firstAttribute="bottom" secondItem="uuM-fX-K0Q" secondAttribute="bottom" id="gfB-Ic-2Fu"/>
+                <constraint firstAttribute="trailing" secondItem="uuM-fX-K0Q" secondAttribute="trailing" id="tVV-fz-bzC"/>
+                <constraint firstItem="uuM-fX-K0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zSB-Am-6vR"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

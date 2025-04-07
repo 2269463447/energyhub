@@ -1,0 +1,13 @@
+//
+//  EHMemberWatchVideoViewController.h
+//  EnergyHub
+//
+//  Created by cpf on 2017/8/20.
+//  Copyright © 2017年 cpf. All rights reserved.
+//
+
+#import "EHBaseViewController.h"
+
+@interface EHMemberWatchVideoViewController : EHBaseViewController
+
+@end

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EHMemberWatchVideoViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AX3-XY-xjO">
+                    <rect key="frame" x="0.0" y="10" width="375" height="657"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本站会员通过什么方法可以免费看视频?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfl-Iz-Sbj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="9GA-U2-Tbh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep3-1a-jsa">
+                            <rect key="frame" x="0.0" y="40" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="C3a-MJ-ics"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方法一：通过分享本站课程，推荐新会员，推荐一名新会员，会获得本站10U币的奖励，用来观看本站课程。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp8-nV-cTg">
+                            <rect key="frame" x="10" y="50.5" width="355" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="sJs-dP-0NW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-Pv-zQf">
+                            <rect key="frame" x="0.0" y="120.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="uo5-qU-EHB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方法二：成为本站的老师会员，老师会员可以免费观看本站所有课程。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcH-ZL-hQQ">
+                            <rect key="frame" x="10" y="131" width="355" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="L6C-st-USm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lfl-Iz-Sbj" secondAttribute="trailing" id="5Ay-Sj-Fs0"/>
+                        <constraint firstItem="ep3-1a-jsa" firstAttribute="top" secondItem="Lfl-Iz-Sbj" secondAttribute="bottom" id="8JN-s9-izm"/>
+                        <constraint firstAttribute="trailing" secondItem="pp8-nV-cTg" secondAttribute="trailing" constant="10" id="Ji6-Hj-kMg"/>
+                        <constraint firstItem="pp8-nV-cTg" firstAttribute="top" secondItem="ep3-1a-jsa" secondAttribute="bottom" constant="10" id="LQ2-vm-tE9"/>
+                        <constraint firstItem="RRo-Pv-zQf" firstAttribute="top" secondItem="pp8-nV-cTg" secondAttribute="bottom" constant="10" id="TOH-Zv-mbk"/>
+                        <constraint firstItem="Lfl-Iz-Sbj" firstAttribute="top" secondItem="AX3-XY-xjO" secondAttribute="top" id="WPj-8Z-MvT"/>
+                        <constraint firstAttribute="trailing" secondItem="ep3-1a-jsa" secondAttribute="trailing" id="YQt-0S-IUU"/>
+                        <constraint firstItem="XcH-ZL-hQQ" firstAttribute="leading" secondItem="AX3-XY-xjO" secondAttribute="leading" constant="10" id="f4y-oz-fFc"/>
+                        <constraint firstItem="XcH-ZL-hQQ" firstAttribute="top" secondItem="RRo-Pv-zQf" secondAttribute="bottom" constant="10" id="iaa-Pv-4fw"/>
+                        <constraint firstAttribute="trailing" secondItem="XcH-ZL-hQQ" secondAttribute="trailing" constant="10" id="kRS-g8-MxY"/>
+                        <constraint firstItem="ep3-1a-jsa" firstAttribute="leading" secondItem="AX3-XY-xjO" secondAttribute="leading" id="tAF-WY-tr6"/>
+                        <constraint firstItem="pp8-nV-cTg" firstAttribute="leading" secondItem="AX3-XY-xjO" secondAttribute="leading" constant="10" id="tMU-Nz-Ahq"/>
+                        <constraint firstItem="Lfl-Iz-Sbj" firstAttribute="leading" secondItem="AX3-XY-xjO" secondAttribute="leading" id="u98-YL-qSx"/>
+                        <constraint firstAttribute="trailing" secondItem="RRo-Pv-zQf" secondAttribute="trailing" id="woU-ac-XgS"/>
+                        <constraint firstItem="RRo-Pv-zQf" firstAttribute="leading" secondItem="AX3-XY-xjO" secondAttribute="leading" id="zvy-WV-hgZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AX3-XY-xjO" secondAttribute="trailing" id="LpE-YA-UGB"/>
+                <constraint firstItem="AX3-XY-xjO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Vha-vJ-j7T"/>
+                <constraint firstItem="AX3-XY-xjO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b2E-3t-xJk"/>
+                <constraint firstAttribute="bottom" secondItem="AX3-XY-xjO" secondAttribute="bottom" id="vOG-KK-kyF"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+    -webkit-user-select: none;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+input{
+  background: none;
+  outline: none;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#alipay, #money{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid darkgray;
+}
+#money{
+    margin-top: 15px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.tip{
+    text-align: right;
+    font-size: 12px;
+    color: #FF0066;
+    display: none;
+}
+.tip_show{
+    display: inline;
+}
+#remark{
+    font-size: 14px;
+    margin-top: 40px;
+}
+.center{
+    display: flex;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.withdraw{
+    border: none;
+    height: 30px;
+    width: 180px;
+    margin-top: 15px;
+    background-color: rgb(251,225,127)
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.6;
+    color: gray;
+}
+</style>
+
+<title>账户详情-提现</title>
+
+</head>
+<body>
+    <script type = "text/javascript">
+        function setData(cash){
+            document.getElementById("money").innerHTML = cash
+            // 根据可提现金额设置按钮的状态，>=500才能提现
+            var cashNumber = parseInt(cash)
+            if(cashNumber < 500){
+                var wbutton = document.getElementById("wbc")
+                //wbutton.setAttribute("class", "disabled")
+                wbutton.classList.add("disabled")
+            }else{
+                var tipLabel = document.getElementById("tipLabel")
+                tipLabel.classList.add("tip_show")
+            }
+        }
+        function withdraw(){
+            var messageHandlers = window.webkit.messageHandlers
+            if(messageHandlers && messageHandlers.withdrawAction){
+                // 没有参数时需要传null【这个方法必须要有参数！！！】,否则无法调用对应的OC方法
+                var amount = document.getElementById("alipay").value
+                messageHandlers.withdrawAction.postMessage(amount)
+            }else{
+                alert("withdrawAction:::no message")
+            }
+        }
+    </script>
+
+<div class="item">
+    <div>当前可提现金额：<span id="tipLabel" class="tip">(不足提现标准)</span></div>
+    <div class="center"><span id="money">0000</span></div>
+    <p>请输入收款支付宝账号：</p>
+    <div class="center"><input id="alipay" placeholder="支付宝账号"></input></div>
+    <div class="center" style="width:100%;">
+        <button id="wbc" class="withdraw" onclick="withdraw()">提交</button>
+    </div>
+    <div id="remark">注：满500元可提现。</div>
+</div>
+
+</body>
+</html>
