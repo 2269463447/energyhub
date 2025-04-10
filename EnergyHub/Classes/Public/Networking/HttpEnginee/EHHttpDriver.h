@@ -16,6 +16,8 @@
 #define EHSuccessCode  @"000000"
 #define EHRegisterCode @"666666"
 #define EHNOPowerKey   @"999999"
+#define ResponseData @"returnObj"
+#define ResponseCode @"returnCode"
 
 /**
  *  网络请求的驱动类(面向非业务的请求, 一般不直接调用).

@@ -50,6 +50,11 @@ class EHActivityReleaseController: EHBaseViewController {
     var detailAddress: String = ""
     ///活动视图
     var themeContentView = UIView()
+    ///所选主题
+    var selectedTheme: ActivityTheme?
+    ///所选标签
+    var selectedTags: [ActivityTag] = []
+    
     
     
     let startTimeIcon = UIImageView(image: UIImage(named: "time_picker"))
@@ -737,6 +742,8 @@ class EHActivityReleaseController: EHBaseViewController {
                 )
             }
             themeContentView.layoutIfNeeded()
+            selectedTheme = theme
+            selectedTags = tags
         }
         self.navigationController?.pushViewController(vc, animated: true)
     }

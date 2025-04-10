@@ -11,10 +11,18 @@
 @implementation EHActivityService
 
 
-- (void)activityListWithParam:(NSDictionary *)param 
-                 successBlock:(void (^)(NSArray * _Nonnull))successBlock
+- (void)activityListWithParam:(NSDictionary *)param
+                 successBlock:(void (^)(NSArray*))successBlock
                    errorBlock:(EHErrorBlock)errorBlock {
-    
+    NSString *url = EHHttpRestURL(@"intraCityActivity/queryPassActivity.app");
+    [self sendJSONPostRequestWithURL:url params:param success:^(NSDictionary *responseDictinary) {
+        NSDictionary *response = responseDictinary[ResponseData];
+        NSDictionary *list = response[@"list"];
+        NSArray *courseArray = [EHActivityItem mj_objectArrayWithKeyValuesArray:list];
+        successBlock(courseArray);
+    } error:^(EHError *error) {
+        errorBlock(error);
+    }];
 }
 
 - (void)activityDetailWithParam:(NSDictionary *)param 

@@ -14,6 +14,7 @@
 #import "UIImage+Extension.h"
 #import "EHActivityItem.h"
 #import <EnergyHub-Swift.h>
+#import "EHActivityService.h"
 
 
 @interface EHActivityListViewController ()
@@ -28,6 +29,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) EHActivityTopView *activityTopView;
 @property (nonatomic, strong) EHHorizontalScrollView *horizontalScrollView;
+@property (nonatomic, strong) EHActivityService *service;
 
 @end
 
@@ -54,7 +56,26 @@
     self.dataList = @[item, item, item];
     [self.tableView registerNib:[UINib nibWithNibName:[EHActivityItemCell cellIdentifier] bundle:nil] forCellReuseIdentifier:[EHActivityItemCell cellIdentifier]];
     [self setupUI];
+    [self loadList];
     self.needNav = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self loadList];
+}
+
+- (void) loadList {
+    NSInteger userId = [[EHUserInfo sharedUserInfo].Id integerValue];
+    NSDictionary *params = @{@"pageNum": @1, @"pageSize": @10, @"currentUserId": @(userId)};
+    
+    [self.service activityListWithParam:params successBlock:^(NSArray * _Nonnull courseArray) {
+        // 处理接收到的活动列表 courseArray
+        NSLog(@"Received activities: %@", courseArray);
+    } errorBlock:^(EHError *error) {
+        // 处理错误情况
+        NSLog(@"Request failed with error: %@", error);
+    }];
 }
 
 - (EHActivityTopView *)activityTopView {
@@ -120,6 +141,13 @@
         
     }
     return _tableView;
+}
+
+- (EHActivityService *)service {
+    if (!_service) {
+        _service = [[EHActivityService alloc] init];
+    }
+    return _service;
 }
 
 - (CGFloat)tabBarHeight {
